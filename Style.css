@@ -1,0 +1,181 @@
+/*Fond de la page*/
+
+@font-face 
+{
+    font-family: '2dumbregular';
+    src: url('fonts/2Dumb-webfont.eot');
+    src: url('fonts/2Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/2Dumb-webfont.woff') format('woff'),
+         url('fonts/2Dumb-webfont.ttf') format('truetype'),
+         url('fonts/2Dumb-webfont.svg#2dumbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'LearningCurve';
+	url: ('LearningCurveDashed_OT.otf') format ('otf'),
+	url: ('LearningCurve_OT.otf') format ('otf');
+}
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+@media all and (max-width:800px)
+{  
+/* Supprimer le liseret - Fonctionne correctement*/
+    #liseret 
+    {
+    Display: none;
+    }
+/* Declarer l'arrière-plan blanc à changer pour les ecran de petite taille - fonctionne correctement*/     
+    #page 
+    {
+    width: auto;
+    margin-right: auto;
+    margin-left:auto;
+    background-color: white;
+    }  
+/* Afficher les sections experiences, formation, competences les une en dessous des autres - Ne fonctionne pas*/     
+    section 
+    {
+    display: block;
+    clear: both; 
+    width: 100% !important; 
+    }
+	
+}
+ 
+body
+{
+	background-image: url('images/fond_gris.jpg');
+	font-family: 'LearningCurve', 'Quicksand-Bold', verdana, corbel, sans-serif;
+	font-weight: normal;
+}
+/* Declarer l'arrière-plan et les polices à utiliser*/
+#page 
+{
+width: 85%;
+margin: 0 auto;
+margin-left: 100px;
+}
+/*creer un liseret gris flottant*/
+#liseret 
+{
+position: fixed;
+left: 0px;
+top: 0px;
+float: left;
+width: 95px;
+height: 100%;
+background-color: #FF480D;
+}
+ 
+.floating /* Declare une bordure grise et un ombrage à la photo poisson*/
+{
+border: 2px grey solid;
+border-radius: 55px;
+float: right;
+box-shadow: 10px 8px 6px grey;
+}
+/* Centre le bloc de texte nommé "Entete*/
+header 
+{
+text-align: center;
+border-bottom: 3px groove grey;
+margin-bottom: 20px;
+padding-bottom: 20px;
+}
+/* Mets le texte h1 "CV Anna" dans un rouge et une taille de 3em*/
+header h1 
+{
+font-family: '2dumbregular', corbel, sans-serif;
+font-weight: normal;
+font-size: 3em;
+color: #940722;
+position: relative;
+top: 20px;
+}
+
+/* Mets l'élément strong contenu dans le bloc appelé "Entete" en couleur rouge et taille 1.8em */
+header strong 
+{
+font-family: 'LearningCurve', 'BallparkWeiner', corbel, sans-serif;
+font-size: 2em;
+color: #940401;
+}
+ 
+h2 /* souligne tout les elements H2 et les mets en couleur gris bleuté */
+{
+font-family: 'Quicksand-Bold', 'BallparkWeiner', corbel, sans-serif;
+font-size: 1.7em;
+text-decoration: underline;
+color: #940661
+}
+/* mets un arrière-plan blanc transparent en fond sur les blocs de texte de type listes à puce et liste numérotée */
+ul, ol 
+{
+background-color: rgba(260, 260, 260, 0.9);
+}
+ul strong
+{
+font-family: 'BallparkWeiner', corbel, sans-serif;
+font-size: 1.3em;
+color: #940661
+}
+ 
+section
+{
+display: inline-block;
+font-size: 0.8em;
+vertical-align: top;
+width: 30%;
+margin-right: 0.5%;
+margin-bottom: 2%; 
+}
+ 
+section h2
+{
+text-align: center;
+}
+
+section ul,
+{
+text-align: justify;
+}
+
+/*h2 /* souligne tout les elements H2 et les mets en couleur gris bleuté */
+/*{
+font-family: 'Quicksand-Bold', 'BallparkWeiner', corbel, sans-serif;
+font-size: 1.7em;
+text-decoration: underline;
+color: #940661
+}*/
+
+footer strong 
+{
+font-family: 'LearningCurve', 'BallparkWeiner', corbel, sans-serif;
+font-size: 1.1em;
+color: #940401;
+}
+
+footer h2
+{
+text-align: center;
+}
+footer p
+{
+border-top: 3px outset grey;
+background-color: #F9F9F9;
+text-align: center;
+}
